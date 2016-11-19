@@ -40,7 +40,7 @@ var multer  = require('multer')
 var upload = multer({ dest: 'uploads/' })
 
 // Setup database connection and ports for the cloud app
-var port = process.env.PORT || 80;
+var port = process.env.PORT || 8080;
 // mongoose.connect(config.database);
 // var db = mongoose.connection;
 
