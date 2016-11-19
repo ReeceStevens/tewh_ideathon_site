@@ -39,15 +39,6 @@ var checksum = require('checksum');
 var multer  = require('multer')
 var upload = multer({ dest: 'uploads/' })
 
-
-// configuration file
-var config = require('./config');
-
-// Database model files
-var user_db = require('./app/models/user');
-var cl_accounts_db = require('./app/models/claccounts');
-var craiglist_db = require('./app/models/craigslist');
-
 // Setup database connection and ports for the cloud app
 var port = process.env.PORT || 80;
 mongoose.connect(config.database);
