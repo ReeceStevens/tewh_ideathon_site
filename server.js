@@ -41,11 +41,11 @@ var upload = multer({ dest: 'uploads/' })
 
 // Setup database connection and ports for the cloud app
 var port = process.env.PORT || 80;
-mongoose.connect(config.database);
-var db = mongoose.connection;
+// mongoose.connect(config.database);
+// var db = mongoose.connection;
 
-// Set some app configurations
-app.set('superSecret', config.secret);
+// // Set some app configurations
+// app.set('superSecret', config.secret);
 app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
